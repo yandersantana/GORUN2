@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ResumeFragment">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logogorun" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/txtResult"
+        android:text="Training"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        tools:context=".ResumeFragment">
+
+        <TextView
+            android:id="@+id/txtCronometro"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Cronometro"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtRecorrido"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Recorrido"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        tools:context=".ResumeFragment">
+
+        <TextView
+            android:id="@+id/txtTiempo"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="00:00:00"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtKm"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="0.00"
+            android:textAlignment="center"
+            android:paddingLeft="45dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/km"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="km"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        tools:context=".ResumeFragment">
+
+        <Button
+            android:id="@+id/btnIniciar"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:text="Inicio"
+            android:background="@drawable/buttonbackground" />
+
+        <Button
+            android:id="@+id/btnParar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="FIN"
+            android:background="@drawable/buttonbackground" />
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/main_branch_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        tools:context="com.googlemap.googlemap.MapsActivity" />
+
+
+</LinearLayout>

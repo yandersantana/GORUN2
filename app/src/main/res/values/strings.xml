@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Go Run Teams</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prompt">Choose a country</string>
+    <string-array name="countries_array">
+        <item>China</item>
+        <item>India</item>
+        <item>USA</item>
+        <item>Indonesia</item>
+        <item>Brazil</item>
+        <item>Pakistan</item>
+        <item>Nigeria</item>
+        <item>Bangladesh</item>
+        <item>Russia</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>
